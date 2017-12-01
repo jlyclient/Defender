@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/jquery.cxcalendar.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/BusinessMaintenance.css">
+</head>
+<body>
+<!--<nav class="navbar navbar-default navbar-fixed-top">-->
+    <!--<div class="container-fluid">-->
+        <!--&lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;-->
+        <!--<div class="navbar-header">-->
+            <!--<a class="navbar-brand" href="#">副省级城市经济金融共享信息系统</a>-->
+            <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">-->
+                <!--<span class="sr-only">Toggle navigation</span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+            <!--</button>-->
+        <!--</div>-->
+        <!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
+        <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+            <!--<ul class="nav navbar-nav">-->
+                <!--<li><a href="./BusinessMaintenance.html">用户管理 </a></li>-->
+                <!--<li><a href="./DataAcquisition.html">采集数据</a></li>-->
+                <!--<li><a href="./ProcessingData.html">加工数据</a></li>-->
+                <!--<li class="active"><a href="#">数据查询</a></li>-->
+            <!--</ul>-->
+            <!--<ul class="nav navbar-nav navbar-right">-->
+                <!--<li><a href="#">个人中心</a></li>-->
+                <!--<li><a href="#">退出</a></li>-->
+            <!--</ul>-->
+
+        <!--</div>&lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
+
+    <!--</div>&lt;!&ndash; /.container-fluid &ndash;&gt;-->
+<!--</nav>-->
+
+
+<div class="header">
+    <div class="headerInner">
+        <ul class="left">
+            <li><a class="indexTab" href="#">副省级城市经济金融共享信息系统</a></li>
+        </ul>
+        <ul class="left headercenter">
+            <li><a href="./BusinessMaintenance.html">用户管理 </a></li>
+            <li><a href="./DataAcquisition.html">采集数据</a></li>
+            <li><a href="./ProcessingData.html">加工数据</a></li>
+            <li class="active"><a href="#">数据查询</a></li>
+        </ul>
+        <ul class="right">
+            <li><a href="#">个人中心</a></li>
+            <li><a href="#">退出</a></li>
+        </ul>
+        <p class="clear"></p>
+    </div>
+</div>
+
+
+
+<div class="InnerBox BusinessMaintenance">
+    <div class="DatainQuiry">
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#breakfast" aria-controls="breakfast" role="tab" data-toggle="tab">基础表</a></li>
+            <li role="presentation" ><a href="#lunch" aria-controls="lunch" role="tab" data-toggle="tab">对比表</a></li>
+        </ul>
+        <p class="clear"></p>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="breakfast">
+                <p class="city">
+                    <span>
+                        城市：
+                    </span>
+                    <span>
+                        <input type="checkbox" value="信息1"> 信息1
+                    </span>
+                    <span>
+                        <input type="checkbox" value="信息2"> 信息2
+                    </span>
+                    <span>
+                        <input type="checkbox" value="信息3"> 信息3
+                    </span>
+                    <span>
+                        <input type="checkbox" value="信息4"> 信息4
+                    </span>
+                    <span>
+                        <input type="checkbox" value="信息5"> 信息5
+                    </span>
+                    <span>
+                        <input type="checkbox" value="信息6"> 信息6
+                    </span>
+                    <span>
+                        <input type="checkbox" value="信息7"> 信息7
+                    </span>
+                </p>
+                <p>
+                    <span>
+                        时间点：
+                    </span>
+                    <input id="element_id" type="text">
+                </p>
+                <p class="tablename">
+                    <span>表名：</span>
+                    <span>
+                        <input type="checkbox" value="表格1"> 表格1
+                    </span>
+                    <span>
+                        <input type="checkbox" value="表格2"> 表格2
+                    </span>
+                    <span>
+                        <input type="checkbox" value="表格3"> 表格3
+                    </span>
+                    <span>
+                        <input type="checkbox" value="表格4"> 表格4
+                    </span>
+                    <span>
+                        <input type="checkbox" value="表格5"> 表格5
+                    </span>
+                    <span>
+                        <input type="checkbox" value="表格6"> 表格6
+                    </span>
+                    <span>
+                        <input type="checkbox" value="表格7"> 表格7
+                    </span>
+                </p>
+                <div>
+                    <p class="btn-check" id="check-city" >查询</p>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="lunch">
+                <p class="city">
+                    <span>
+                        城市：
+                    </span>
+                    <span>
+                        <input type="checkbox" value="信息1"> 信息1
+                    </span>
+                    <span>
+                        <input type="checkbox" value="信息2"> 信息2
+                    </span>
+                    <span>
+                        <input type="checkbox" value="信息3"> 信息3
+                    </span>
+                    <span>
+                        <input type="checkbox" value="信息4"> 信息4
+                    </span>
+                    <span>
+                        <input type="checkbox" value="信息5"> 信息5
+                    </span>
+                    <span>
+                        <input type="checkbox" value="信息6"> 信息6
+                    </span>
+                    <span>
+                        <input type="checkbox" value="信息7"> 信息7
+                    </span>
+                </p>
+                <p>
+                    <span>
+                        时间点：
+                    </span>
+                    <input id="element_id2" type="text">
+                </p>
+                <p class="tablename">
+                    <span>表名：</span>
+                    <span>
+                        <input type="checkbox" value="表格1"> 表格1
+                    </span>
+                    <span>
+                        <input type="checkbox" value="表格2"> 表格2
+                    </span>
+                    <span>
+                        <input type="checkbox" value="表格3"> 表格3
+                    </span>
+                    <span>
+                        <input type="checkbox" value="表格4"> 表格4
+                    </span>
+                    <span>
+                        <input type="checkbox" value="表格5"> 表格5
+                    </span>
+                    <span>
+                        <input type="checkbox" value="表格6"> 表格6
+                    </span>
+                    <span>
+                        <input type="checkbox" value="表格7"> 表格7
+                    </span>
+                </p>
+                <div><p class="btn-check" id="check-table" >查询</p></div>
+            </div>
+        </div>
+    </div>
+    <div class="check-reason">
+
+    </div>
+</div>
+
+
+
+</body>
+<script src="./js/jquery-1.12.1.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/jquery.cxcalendar.js"></script>
+<script src="./js/jquery.cxcalendar.languages.js"></script>
+<script src="./js/DataQuery.js"></script>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/jquery.cxcalendar.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/BusinessMaintenance.css">
+</head>
+<body>
+<!--<nav class="navbar navbar-default navbar-fixed-top">-->
+    <!--<div class="container-fluid">-->
+        <!--&lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;-->
+        <!--<div class="navbar-header">-->
+            <!--<a class="navbar-brand" href="#">副省级城市经济金融共享信息系统</a>-->
+            <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">-->
+                <!--<span class="sr-only">Toggle navigation</span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+            <!--</button>-->
+        <!--</div>-->
+        <!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
+        <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+            <!--<ul class="nav navbar-nav">-->
+                <!--<li><a href="./BusinessMaintenance.html">用户管理 </a></li>-->
+                <!--<li><a href="./DataAcquisition.html">采集数据</a></li>-->
+                <!--<li class="active"><a href="#">加工数据</a></li>-->
+                <!--<li><a href="./DataQuery.html">数据查询</a></li>-->
+            <!--</ul>-->
+            <!--<ul class="nav navbar-nav navbar-right">-->
+                <!--<li><a href="#">个人中心</a></li>-->
+                <!--<li><a href="#">退出</a></li>-->
+            <!--</ul>-->
+
+        <!--</div>&lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
+
+    <!--</div>&lt;!&ndash; /.container-fluid &ndash;&gt;-->
+<!--</nav>-->
+
+<div class="header">
+    <div class="headerInner">
+        <ul class="left">
+            <li><a class="indexTab" href="#">副省级城市经济金融共享信息系统</a></li>
+        </ul>
+        <ul class="left headercenter">
+            <li><a href="./BusinessMaintenance.html">用户管理 </a></li>
+            <li><a href="./DataAcquisition.html">采集数据</a></li>
+            <li class="active"><a href="#">加工数据</a></li>
+            <li><a href="./DataQuery.html">数据查询</a></li>
+        </ul>
+        <ul class="right">
+            <li><a href="#">个人中心</a></li>
+            <li><a href="#">退出</a></li>
+        </ul>
+        <p class="clear"></p>
+    </div>
+</div>
+
+
+
+<div class="InnerBox BusinessMaintenance ">
+    <div class="ProcessingData">
+        <p>
+            <span>选择日期：</span>
+            <input id="element_id" type="text">
+        </p>
+        <P>
+            <span>数据不齐全时也加工：</span>
+            <span>
+               <select class="selectposition" name="alldata">
+                   <option value ="yes">是</option>
+                   <option value ="no">否</option>
+                </select>
+            </span>
+        </P>
+        <P>
+            <span>已经加工过时也加工：</span>
+            <span>
+               <select class="selectposition" name="diddata">
+                   <option value ="yes">是</option>
+                   <option value ="no">否</option>
+                </select>
+            </span>
+        </P>
+        <p>
+            <span id="processing_data">加工</span>
+        </p>
+    </div>
+</div>
+<div class="Alert delAlert">
+    <div class="AlertShaw"></div>
+    <div class="delBox">
+        <div>确定要加工么？</div>
+        <div>
+            <span onclick="sureDel()">确定</span>
+            <span onclick="noDel()">取消</span>
+        </div>
+    </div>
+</div>
+</body>
+<script src="./js/jquery-1.12.1.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/jquery.cxcalendar.js"></script>
+<script src="./js/jquery.cxcalendar.languages.js"></script>
+<script src="./js/ProcessingData.js"></script>
+</html>

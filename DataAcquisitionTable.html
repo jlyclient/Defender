@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/jquery.cxcalendar.css">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/BusinessMaintenance.css">
+    <link rel="stylesheet" href="./css/DataAcquisitionTable.css">
+
+</head>
+<body>
+<!--<nav class="navbar navbar-default navbar-fixed-top">-->
+    <!--<div class="container-fluid">-->
+        <!--&lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;-->
+        <!--<div class="navbar-header">-->
+            <!--<a class="navbar-brand" href="#">副省级城市经济金融共享信息系统</a>-->
+            <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">-->
+                <!--<span class="sr-only">Toggle navigation</span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+                <!--<span class="icon-bar"></span>-->
+            <!--</button>-->
+        <!--</div>-->
+        <!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
+        <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+            <!--<ul class="nav navbar-nav">-->
+                <!--<li><a href="./BusinessMaintenance.html">用户管理 </a></li>-->
+                <!--<li class="active"><a href="#">采集数据</a></li>-->
+                <!--<li><a href="./ProcessingData.html">加工数据</a></li>-->
+                <!--<li><a href="./DataQuery.html">数据查询</a></li>-->
+            <!--</ul>-->
+            <!--<ul class="nav navbar-nav navbar-right">-->
+                <!--<li><a href="#">个人中心</a></li>-->
+                <!--<li><a href="#">退出</a></li>-->
+            <!--</ul>-->
+
+        <!--</div>&lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
+
+    <!--</div>&lt;!&ndash; /.container-fluid &ndash;&gt;-->
+<!--</nav>-->
+
+
+<div class="header">
+    <div class="headerInner">
+        <ul class="left">
+            <li><a class="indexTab" href="#">副省级城市经济金融共享信息系统</a></li>
+        </ul>
+        <ul class="left headercenter">
+            <li><a href="./BusinessMaintenance.html">用户管理 </a></li>
+            <li class="active"><a href="#">采集数据</a></li>
+            <li><a href="./ProcessingData.html">加工数据</a></li>
+            <li><a href="./DataQuery.html">数据查询</a></li>
+        </ul>
+        <ul class="right">
+            <li><a href="#">个人中心</a></li>
+            <li><a href="#">退出</a></li>
+        </ul>
+        <p class="clear"></p>
+    </div>
+</div>
+
+<div class="InnerBox BusinessMaintenance DataAcquisitionTable">
+    <div>
+        <h4>金融机构信贷稳定征信指标月报</h4>
+        <p>
+            <span>时间：</span>
+            <input id="element_id" type="text">
+        </p>
+        <p><span>选择文件：</span> <input style="display:inline-block" type="file"> <span class="right" id="sure_file">确定</span> </p>
+        <table class="table table-bordered">
+            <tr>
+                <th></th>
+                <th>计算单位</th>
+                <th>本年累计</th>
+                <th>比上年同期增加%</th>
+            </tr>
+            <tr>
+                <td>社会融资规模总额</td>
+                <td>亿元</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>地方法人金融机构数量</td>
+                <td>个</td>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+</body>
+<script src="./js/jquery-1.12.1.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/jquery.cxcalendar.js"></script>
+<script src="./js/jquery.cxcalendar.languages.js"></script>
+<script src="./js/DataAcquisitionTable.js"></script>
+</html>
